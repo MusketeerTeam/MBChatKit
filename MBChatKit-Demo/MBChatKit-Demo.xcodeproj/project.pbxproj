@@ -14,6 +14,7 @@
 		EFB3C2F31F07AC2C00B7378E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB3C2F21F07AC2C00B7378E /* Assets.xcassets */; };
 		EFB3C2F61F07AC2C00B7378E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB3C2F41F07AC2C00B7378E /* LaunchScreen.storyboard */; };
 		EFB3C3081F07ADF500B7378E /* MBCKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C3071F07ADF500B7378E /* MBCKBaseViewController.m */; };
+		EFB3C30B1F07D79A00B7378E /* MBCKBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C30A1F07D79A00B7378E /* MBCKBaseScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		EFB3C2FE1F07AC9E00B7378E /* MBChatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBChatKit.h; sourceTree = "<group>"; };
 		EFB3C3061F07ADF500B7378E /* MBCKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCKBaseViewController.h; sourceTree = "<group>"; };
 		EFB3C3071F07ADF500B7378E /* MBCKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCKBaseViewController.m; sourceTree = "<group>"; };
+		EFB3C3091F07D79A00B7378E /* MBCKBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCKBaseScrollViewController.h; sourceTree = "<group>"; };
+		EFB3C30A1F07D79A00B7378E /* MBCKBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCKBaseScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 			children = (
 				EFB3C3061F07ADF500B7378E /* MBCKBaseViewController.h */,
 				EFB3C3071F07ADF500B7378E /* MBCKBaseViewController.m */,
+				EFB3C3091F07D79A00B7378E /* MBCKBaseScrollViewController.h */,
+				EFB3C30A1F07D79A00B7378E /* MBCKBaseScrollViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 			files = (
 				EFB3C2EE1F07AC2C00B7378E /* ViewController.m in Sources */,
 				EFB3C2EB1F07AC2C00B7378E /* AppDelegate.m in Sources */,
+				EFB3C30B1F07D79A00B7378E /* MBCKBaseScrollViewController.m in Sources */,
 				EFB3C3081F07ADF500B7378E /* MBCKBaseViewController.m in Sources */,
 				EFB3C2E81F07AC2C00B7378E /* main.m in Sources */,
 			);

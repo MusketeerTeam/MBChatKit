@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15F705758A7C1CD80AE3C9A5 /* libPods-MBChatKit-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5FF921F10F9E262436D248 /* libPods-MBChatKit-Demo.a */; };
 		EFB3C2E81F07AC2C00B7378E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C2E71F07AC2C00B7378E /* main.m */; };
 		EFB3C2EB1F07AC2C00B7378E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C2EA1F07AC2C00B7378E /* AppDelegate.m */; };
 		EFB3C2EE1F07AC2C00B7378E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C2ED1F07AC2C00B7378E /* ViewController.m */; };
@@ -15,9 +16,13 @@
 		EFB3C2F61F07AC2C00B7378E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB3C2F41F07AC2C00B7378E /* LaunchScreen.storyboard */; };
 		EFB3C3081F07ADF500B7378E /* MBCKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C3071F07ADF500B7378E /* MBCKBaseViewController.m */; };
 		EFB3C30B1F07D79A00B7378E /* MBCKBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C30A1F07D79A00B7378E /* MBCKBaseScrollViewController.m */; };
+		EFB3C30E1F0BE71C00B7378E /* MBCKBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C30D1F0BE71C00B7378E /* MBCKBaseTableViewController.m */; };
+		EFB3C3131F0BE88C00B7378E /* MBCKStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3C3121F0BE88C00B7378E /* MBCKStatusView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F5FF921F10F9E262436D248 /* libPods-MBChatKit-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBChatKit-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA98FD78646685383AE5078E /* Pods-MBChatKit-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBChatKit-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBChatKit-Demo/Pods-MBChatKit-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		EFB3C2E31F07AC2C00B7378E /* MBChatKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBChatKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB3C2E71F07AC2C00B7378E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFB3C2E91F07AC2C00B7378E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,6 +38,12 @@
 		EFB3C3071F07ADF500B7378E /* MBCKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCKBaseViewController.m; sourceTree = "<group>"; };
 		EFB3C3091F07D79A00B7378E /* MBCKBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCKBaseScrollViewController.h; sourceTree = "<group>"; };
 		EFB3C30A1F07D79A00B7378E /* MBCKBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCKBaseScrollViewController.m; sourceTree = "<group>"; };
+		EFB3C30C1F0BE71C00B7378E /* MBCKBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCKBaseTableViewController.h; sourceTree = "<group>"; };
+		EFB3C30D1F0BE71C00B7378E /* MBCKBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCKBaseTableViewController.m; sourceTree = "<group>"; };
+		EFB3C3111F0BE88C00B7378E /* MBCKStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCKStatusView.h; sourceTree = "<group>"; };
+		EFB3C3121F0BE88C00B7378E /* MBCKStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCKStatusView.m; sourceTree = "<group>"; };
+		EFB3C3151F0BEF8E00B7378E /* MBCKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBCKConstants.h; sourceTree = "<group>"; };
+		F3970E31D56FA214B208BA88 /* Pods-MBChatKit-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBChatKit-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBChatKit-Demo/Pods-MBChatKit-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,18 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F705758A7C1CD80AE3C9A5 /* libPods-MBChatKit-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53650641DBF286986ABC2623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F5FF921F10F9E262436D248 /* libPods-MBChatKit-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D687D266AA0166B4A52A260A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA98FD78646685383AE5078E /* Pods-MBChatKit-Demo.debug.xcconfig */,
+				F3970E31D56FA214B208BA88 /* Pods-MBChatKit-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EFB3C2DA1F07AC2B00B7378E = {
 			isa = PBXGroup;
 			children = (
 				EFB3C2FD1F07AC4300B7378E /* MBChatKit */,
 				EFB3C2E51F07AC2C00B7378E /* MBChatKit-Demo */,
 				EFB3C2E41F07AC2C00B7378E /* Products */,
+				D687D266AA0166B4A52A260A /* Pods */,
+				53650641DBF286986ABC2623 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +121,7 @@
 		EFB3C2FD1F07AC4300B7378E /* MBChatKit */ = {
 			isa = PBXGroup;
 			children = (
+				EFB3C3141F0BEF4E00B7378E /* Config */,
 				EFB3C3011F07ACDC00B7378E /* Model */,
 				EFB3C3021F07ACF100B7378E /* Module */,
 				EFB3C3041F07AD6B00B7378E /* Tool */,
@@ -132,12 +164,32 @@
 		EFB3C3051F07AD7A00B7378E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EFB3C3101F0BE86A00B7378E /* View */,
 				EFB3C3061F07ADF500B7378E /* MBCKBaseViewController.h */,
 				EFB3C3071F07ADF500B7378E /* MBCKBaseViewController.m */,
 				EFB3C3091F07D79A00B7378E /* MBCKBaseScrollViewController.h */,
 				EFB3C30A1F07D79A00B7378E /* MBCKBaseScrollViewController.m */,
+				EFB3C30C1F0BE71C00B7378E /* MBCKBaseTableViewController.h */,
+				EFB3C30D1F0BE71C00B7378E /* MBCKBaseTableViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EFB3C3101F0BE86A00B7378E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFB3C3111F0BE88C00B7378E /* MBCKStatusView.h */,
+				EFB3C3121F0BE88C00B7378E /* MBCKStatusView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFB3C3141F0BEF4E00B7378E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EFB3C3151F0BEF8E00B7378E /* MBCKConstants.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFB3C2FA1F07AC2C00B7378E /* Build configuration list for PBXNativeTarget "MBChatKit-Demo" */;
 			buildPhases = (
+				594376A9E996E60925103037 /* [CP] Check Pods Manifest.lock */,
 				EFB3C2DF1F07AC2C00B7378E /* Sources */,
 				EFB3C2E01F07AC2C00B7378E /* Frameworks */,
 				EFB3C2E11F07AC2C00B7378E /* Resources */,
+				EAB1AA79A9539608EAB497B7 /* [CP] Embed Pods Frameworks */,
+				6F9A4547F18006D316BD85FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +261,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		594376A9E996E60925103037 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F9A4547F18006D316BD85FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBChatKit-Demo/Pods-MBChatKit-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB1AA79A9539608EAB497B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBChatKit-Demo/Pods-MBChatKit-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFB3C2DF1F07AC2C00B7378E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,7 +317,9 @@
 				EFB3C2EE1F07AC2C00B7378E /* ViewController.m in Sources */,
 				EFB3C2EB1F07AC2C00B7378E /* AppDelegate.m in Sources */,
 				EFB3C30B1F07D79A00B7378E /* MBCKBaseScrollViewController.m in Sources */,
+				EFB3C30E1F0BE71C00B7378E /* MBCKBaseTableViewController.m in Sources */,
 				EFB3C3081F07ADF500B7378E /* MBCKBaseViewController.m in Sources */,
+				EFB3C3131F0BE88C00B7378E /* MBCKStatusView.m in Sources */,
 				EFB3C2E81F07AC2C00B7378E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +438,7 @@
 		};
 		EFB3C2FB1F07AC2C00B7378E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA98FD78646685383AE5078E /* Pods-MBChatKit-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MBChatKit-Demo/Info.plist";
@@ -344,6 +450,7 @@
 		};
 		EFB3C2FC1F07AC2C00B7378E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3970E31D56FA214B208BA88 /* Pods-MBChatKit-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MBChatKit-Demo/Info.plist";
@@ -372,6 +479,7 @@
 				EFB3C2FC1F07AC2C00B7378E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

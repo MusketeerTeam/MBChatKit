@@ -7,6 +7,7 @@
 //
 
 #import "MBCKBaseScrollViewController.h"
+#import <MJRefresh.h>
 
 @interface MBCKBaseScrollViewController ()
 
@@ -23,20 +24,24 @@
     // 加载ScrollView
     self.scrollView = [self loadScrollView];
     
-    // 定义刷新组件
-    if (self.refreshEnabled) {
-        // TODO: MJRefreshHeader
+    // 下拉刷新是否开启
+    if (self.refreshHeaderEnabled) {
+        __weak typeof(self) weakSelf = self;
+        self.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            [weakSelf.scrollView.mj_header beginRefreshing];
+        }];
     }
     
-    // 定义加载组件
-    if (self.loadMoreEnabled) {
-        // TODO: MJRefreshFooter
+    // 上拉刷新是否开启
+    if (self.refreshFooterEnabled) {
+        __weak typeof(self) weakSelf = self;
+        self.scrollView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            [weakSelf.scrollView.mj_footer beginRefreshing];
+        }];
     }
     
     if (!self.scrollView) NSLog(@"【Warning】scrollView is nil");
     [self.view addSubview:self.scrollView];
-    
-    // TODO：KVO - refreshEnabled and loadMoreEnabled
 }
 
 - (UIScrollView *)loadScrollView {

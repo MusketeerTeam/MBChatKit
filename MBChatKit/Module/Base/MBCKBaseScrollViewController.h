@@ -8,6 +8,8 @@
 
 #import "MBCKBaseViewController.h"
 
+
+
 @interface MBCKBaseScrollViewController : MBCKBaseViewController <UIScrollViewDelegate>
 
 /**
@@ -16,14 +18,14 @@
 @property (nonatomic, weak) UIScrollView *scrollView;
 
 /**
- *  可否刷新
+ *  下拉刷新是否开启
  */
-@property (nonatomic, assign) BOOL refreshEnabled;
+@property (nonatomic, assign) BOOL refreshHeaderEnabled;
 
 /**
- *  可否加载
+ *  上拉刷新是否开启
  */
-@property (nonatomic, assign) BOOL loadMoreEnabled;
+@property (nonatomic, assign) BOOL refreshFooterEnabled;
 
 /**
  *  加载ScrollView，子类要重写该方法

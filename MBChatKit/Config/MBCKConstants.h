@@ -6,8 +6,9 @@
 //  Copyright © 2017 billchan. All rights reserved.
 //
 
-#ifndef MBCKConstants_h
-#define MBCKConstants_h
+#import <Foundation/Foundation.h>
 
-
-#endif /* MBCKConstants_h */
+/**
+ *  聊天服务器连接状态更改了，通知最近对话和聊天页面是否显示红色警告条
+ */
+static NSString *const MBCKNotificationConnectivityUpdated = @"MBCKNotificationConnectivityUpdated";
